@@ -1,9 +1,6 @@
 # Table of Content
 * [Curriculum learning](#curriculum-learning)
 
-$P_\theta$
-
-$h_i$（对于所有i）是可训练的$P_\theta$的函数。\\ 当 $i \in P_{\text{idx}}$时，$h_i$直接复制自$P_\theta$。\\当$i \notin P_{\text{idx}}$时，$h_i$ 仍然依赖于$P_\theta$，\\因为前缀激活始终处于左侧上下文中，因此会影响其右侧的任何激活。
 
 # Curriculum learning
 ## CL应用场景
