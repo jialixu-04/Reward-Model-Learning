@@ -1,7 +1,9 @@
 # Table of Content
 * [Curriculum learning](#curriculum-learning)
 
+$P_\theta$
 
+$h_i$（对于所有i）是可训练的$P_\theta$的函数。\\ 当 $i \in P_{\text{idx}}$时，$h_i$直接复制自$P_\theta$。\\当$i \notin P_{\text{idx}}$时，$h_i$ 仍然依赖于$P_\theta$，\\因为前缀激活始终处于左侧上下文中，因此会影响其右侧的任何激活。
 
 # Curriculum learning
 ## CL应用场景
@@ -53,4 +55,4 @@
   * 联合采用不同的CL方法使它们相互补充。
   * 许多全自动CL方法在弱监督的任务上明显比SPL方法更有效，而在这些论文中经常选择MentorNet作为基线。
   * 如果有足够的专家领域知识可用，那么预定义的CL方法更适合设计一个专门适合确切场景的知识驱动课程；如果对数据没有预先的假设，那么自动CL方法更适合学习自适应底层数据集和任务目标的数据驱动课程。
-     
+ 
